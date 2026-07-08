@@ -1,0 +1,83 @@
+<?php
+
+namespace App\Enums;
+
+abstract class FieldLabel
+{
+    const ID = "id";
+    const NAME = "nom";
+    const TITLE = "titre";
+    const LABEL = "libellé";
+    const VALUE = "valeur";
+    const TYPE = "type";
+    const TELEPHONE = "telephone";
+    const TELEPHONE_2 = "telephone 2";
+    const BANK_AGENCE = "agence de la banque";
+    const BANK_DEPOSISIT_DATE = "date de depot";
+    const SERVICE_NUMBER = "numéro de service";
+    const FIRSTNAME = "prenom";
+    const SEX = "sexe";
+    const BIRTHDAY = "date de naissance";
+    const BIRTHPLACE = "lieu de naissance";
+    const MOTHER_NAME = "nom de la mère";
+    const FATHER_NAME = "nom du père";
+    const PHOTO = "photo";
+    const MARITAL_STATUS = "status matrimonial";
+    const DIVORCE_DATE = "date de divorce";
+    const SEPARATION_DATE = "date de separation";
+    const SPOUSE_COUNT = "nombre de conjoints";
+    const CHILDREN_COUNT = "nombre d'enfants";
+    const NEIGHBORHOOD = "quartier";
+    const CITY = "ville";
+    const COUNTRY = "pays";
+    const PAYMENT_NEIGHBORHOOD = "quartier de paiement";
+    const PAYMENT_CITY = "ville de paiement";
+    const PAYMENT_COUNTRY = "pays du paiement";
+    const PAYMENT_MODE = "mode du paiement";
+    const BIRTH_COUNTRY = "pays de naissance";
+    const NATIONALITY = "nationalité";
+    const APPLICANT_QUALITY = "Qualité du demandeur";
+    const WEDDING_DATE = "date de mariage";
+    const WEDDING_PLACE = "lieu de mariage";
+    const WEDDING_COUNTRY = "pays de mariage";
+    const SPOUSE_QUALITY = "Qualité du conjoint";
+    const POSTAL_CODE = "code postal";
+    const EMAIL = "email";
+    const CODE = "code";
+    const ID_DOCUMENT_NUMBER = "numéro de pièce d'identité";
+    const ID_DOCUMENT_TYPE = "type de pièce d'identité";
+    const ESTABLISHMENT_DATE = "date d'établissment";
+    const ESTABLISHMENT_PLACE = "lieu d'établissment";
+    const ESTABLISHMENT_AUTHORITY = "autorité d'établissment";
+    const RESIDENT_CITY = "ville de residence";
+    const RESIDENT_CITY_DATE = "date de résidence dans la ville";
+    const RESIDENT_NEIGHBORHOOD = "quartier de résidence";
+    const REQUEST_REASON = "raison de la demande";
+    const PS_OTHER = "autre";
+    const COMPANY_NAME = "nom de la compagnie";
+    const COMPANY_ADDESS = "adresse de la compagnie";
+    const CREATED_AT = "date de creation";
+    const UPDATED_AT = "date de mise à jour";
+    const PENSION_TYPE = "type de pension";
+    const REGISTRATION = "numéro matricule";
+    const IS_FIRST_TIME = "Premiere demande";
+    const IS_COMMITTED_DEATH = "Est il mort ?";
+    const IS_DEATH_ENGAGED = "Est ce que la mort est engagée ?";
+    const IS_POLICE_REPORT_ESTABLISHED = "Le rapport de police a-t-il été établi ?";
+    const STATUS = "statut";
+    const PASSWORD = "Mot de passe";
+    const PROPORTION = "Proportion";
+    const NUMBER = "Numéro";
+    const PRICE = "prix";
+    const COUNT = "nombre";
+    const IMAGE = "image";
+    const SEUIL = "seuil";
+    const EXPIRATION_DATE = "date d'expiration";
+
+    const DOCUMENT_CATEGORY = "catégorie du document";
+    const DOCUMENT_STEP_KEY = "clé de l'étape du document";
+    const SOCIAL_REASON = "raison sociale";
+    const RCCM_NUMBER = "numéro rccm";
+    const NIF = "nif";
+    const ADDRESS = "adresse";
+}
