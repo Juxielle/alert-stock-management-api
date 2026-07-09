@@ -28,7 +28,7 @@ class ProductSearch extends Controller
         $query = Product::where(EntityField::NUMBER, $number);
 
         $constraint = new ProductConstraint();
-        $query = $constraint->queryAfterSeach($request, $query);
+        $query = $constraint->queryAfterSearch($request, $query);
 
         $models = $query->get()->load("alerts");
         return response()->json($models, Response::HTTP_OK);

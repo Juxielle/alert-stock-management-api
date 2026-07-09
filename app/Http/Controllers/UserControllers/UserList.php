@@ -28,7 +28,7 @@ class UserList extends Controller
             $query = $query->whereDate(EntityField::UPDATED_AT, '>=', Carbon::parse($request->last_update));
 
         $constraint = new UserConstraint();
-        $query = $constraint->queryAfterSeach($request, $query);
+        $query = $constraint->queryAfterSearch($request, $query);
 
         return $this->sendList($request, $query, RoutePath::USER_LIST_ROUTE);
     }

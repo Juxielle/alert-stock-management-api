@@ -135,12 +135,13 @@ abstract class EntityConstraint
         return new CustomValidator(rules: $rules, messages: $messages);
     }
 
-    public function queryAfterSeach(Request $request, Builder $query)
+    public function queryAfterSearch(Request $request, Builder $query): Builder
     {
         foreach ($this->items as $item) {
             if (!$item->isSearchable) continue;
             if (!$request->has($item->name)) continue;
-            $query = $query->where($item->name, 'LIKE', "A%");
+            $value = $request->input($item->name);
+            $query = $query->where($item->name, 'LIKE', "%" .$value. "%");
         }
         return $query;
     }
@@ -149,7 +150,7 @@ abstract class EntityConstraint
     {
         $data = array();
         foreach ($this->items as $item) {
-            $requestName = $this->prefix . "" . $item->name;
+            $requestName = $this->prefix . $item->name;
             if (!$request->has($requestName) &&
                 !array_key_exists($item->name, $keys)) continue;
 

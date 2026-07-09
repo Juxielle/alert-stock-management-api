@@ -44,7 +44,7 @@ class ProductList extends Controller
             $query = $query->whereDate(EntityField::UPDATED_AT, '>=', Carbon::parse($request->last_update));
 
         $constraint = new ProductConstraint();
-        $query = $constraint->queryAfterSeach($request, $query);
+        $query = $constraint->queryAfterSearch($request, $query);
 
         $models = new Collection([]);
         if ($request->has(EntityField::STATUS)) {
